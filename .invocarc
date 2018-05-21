@@ -1,0 +1,45 @@
+#
+# Environment
+#
+
+# recommended by brew doctor
+export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
+export PATH="$PATH:/usr/bin/java"
+export PATH="$PATH:/usr/local/mysql/bin"
+
+#
+# Config
+#    Make changes here to describe your environment
+export TOOLS=~/invoca/tools       # Where tools are installed
+export DIFFTOOL=opendiff               # Tool to use when comparing files
+export WEB1=~/invoca/web/     # Primary web development directory
+export WEB2=~/invoca/web2/    # Alternate web development directory
+
+eval "$(rbenv init - --no-rehash)"
+eval "$(rbenv init -)"
+
+#
+# Tools
+#     Uncomment any you do not want, or better yet, make changes you want in tools and check them in.
+#source $TOOLS/dotfiles/terminal
+#source $TOOLS/dotfiles/terminal_colors
+source $TOOLS/dotfiles/servers
+source $TOOLS/dotfiles/git
+source $TOOLS/dotfiles/rails
+source $TOOLS/dotfiles/misc
+source $TOOLS/dotfiles/revops
+source $TOOLS/dotfiles/prod_monitoring
+
+#
+# Personal Aliases
+#     Copy any of your existing stuff here.
+export DOCKER_WEB_REPO=$HOME/invoca/web
+export DOCKER_PNAPI_REPO=$HOME/invoca/PNAPI
+
+export JIRA_GLUE_PATH='/Users/jebentier/invoca/jira-glue'
+export JIRA_GLUE_INPUT_PATH='/Users/jebentier/invoca/jira-glue/input.rb'
+
+alias db_reload="cd $WEB1; script/reload; osascript -e 'display notification \"Data reload has finished!\" with title \"Local Database\" sound name \"Glass\"'; cd -"
+alias db_regen="cd $WEB1; script/regen; osascript -e 'display notification \"Data regen has finished!\" with title \"Local Database\" sound name \"Glass\"'; cd -"
+
