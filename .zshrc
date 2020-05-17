@@ -76,6 +76,7 @@ export DOTFILES=$HOME/development/dotfiles
 source $ZSH/oh-my-zsh.sh
 source $DOTFILES/.gorc
 source $DOTFILES/.k8src
+source $DOTFILES/.rbenv
 
 # User configuration
 
