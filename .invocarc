@@ -16,6 +16,7 @@ export DIFFTOOL=opendiff               # Tool to use when comparing files
 export WEB1=~/invoca/web/     # Primary web development directory
 export WEB2=~/invoca/web2/    # Alternate web development directory
 
+eval "$(pyenv init --path)"
 eval "$(rbenv init - --no-rehash)"
 eval "$(rbenv init -)"
 
@@ -40,6 +41,6 @@ export DOCKER_PNAPI_REPO=$HOME/invoca/PNAPI
 export JIRA_GLUE_PATH='/Users/jebentier/invoca/jira-glue'
 export JIRA_GLUE_INPUT_PATH='/Users/jebentier/invoca/jira-glue/input.rb'
 
-alias db_reload="cd $WEB1; script/reload; osascript -e 'display notification \"Data reload has finished!\" with title \"Local Database\" sound name \"Glass\"'; cd -"
-alias db_regen="cd $WEB1; script/regen; osascript -e 'display notification \"Data regen has finished!\" with title \"Local Database\" sound name \"Glass\"'; cd -"
+alias db_reload="cd $WEB1; bin/reload; osascript -e 'display notification \"Data reload has finished!\" with title \"Local Database\" sound name \"Glass\"'; cd -"
+alias db_regen="cd $WEB1; bin/regen; osascript -e 'display notification \"Data regen has finished!\" with title \"Local Database\" sound name \"Glass\"'; cd -"
 
