@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ln -s $(pwd)/.gitconfig $HOME/.gitconfig
+ln -s $(pwd)/.gitignore $HOME/.gitignore
+ln -s $(pwd)/.vimrc $HOME/.gorc
+ln -s $(pwd)/.invocarc $HOME/.invocarc
+ln -s $(pwd)/.k8src $HOME/.k8src
+ln -s $(pwd)/.vimrc $HOME/.vimrc
+
+rm -rf $HOME/.zshrc
+ln -sf $(pwd)/.zshrc $HOME/.zshrc
