@@ -1,0 +1,17 @@
+[user]
+  name = James Ebentier
+  email = jebentier@invoca.com
+[core]
+  excludesfile = /Users/jebentier/development/dotfiles/.gitignore
+	editor = vim
+[merge]
+  tool = vimdiff
+  conflictstyle = diff3
+[mergetool]
+  prompt = false
+[include]
+  path = /Users/jebentier/laptop/config_files/.git_invoca_config
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+[init]
+	defaultBranch = main
