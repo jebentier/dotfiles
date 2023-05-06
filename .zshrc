@@ -77,6 +77,8 @@ source $ZSH/oh-my-zsh.sh
 source $DOTFILES/.gorc
 source $DOTFILES/.k8src
 source $DOTFILES/.rbenv
+source $DOTFILES/.android
+source $DOTFILES/.shadowenv
 
 # User configuration
 
@@ -104,7 +106,11 @@ source $DOTFILES/.rbenv
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR=$HOME/.NVM_DIR
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion" # loads nvm bash completion
 export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
+export PATH="/usr/local/opt/krb5/bin:$PATH"
+export PATH="/usr/local/opt/krb5/sbin:$PATH"
+export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
