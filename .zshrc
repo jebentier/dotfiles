@@ -68,9 +68,11 @@ export DOTFILES="$HOME/development/dotfiles"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+source $DOTFILES/.brewrc
 source $DOTFILES/.invocarc
 source $DOTFILES/.gorc
 source $DOTFILES/.k8src
+# source ~/invoca/tools/dotfiles/invocarc
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -101,3 +103,11 @@ export NVM_DIR="/Users/jebentier/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export LUA_LIB=/usr/local/Cellar/lua@5.1/5.1.5_8/bin/lua-5.1
+export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
+export PATH="/usr/local/opt/krb5/bin:$PATH"
+export PATH="/usr/local/opt/krb5/sbin:$PATH"
+export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
