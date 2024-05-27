@@ -1,0 +1,3 @@
+export PATH="/usr/local/opt/postgresql@16/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/postgresql@16/lib"
+export CPPFLAGS="-I/usr/local/opt/postgresql@16/include"

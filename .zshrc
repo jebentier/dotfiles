@@ -79,6 +79,7 @@ source $DOTFILES/.k8src
 source $DOTFILES/.rbenv
 source $DOTFILES/.android
 source $DOTFILES/.shadowenv
+source $DOTFILES/.postgresql
 
 # User configuration
 
@@ -109,7 +110,6 @@ source $DOTFILES/.shadowenv
 export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
 export PATH="/usr/local/opt/krb5/bin:$PATH"
 export PATH="/usr/local/opt/krb5/sbin:$PATH"
-export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
