@@ -71,15 +71,14 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 export PATH=$HOME/development/github_helpers/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/usr/local/go/bin:$PATH
+export PATH="/opt/homebrew/bin:$PATH"
 export DOTFILES=$HOME/development/dotfiles
 
 source $ZSH/oh-my-zsh.sh
 source $DOTFILES/.gorc
 source $DOTFILES/.k8src
 source $DOTFILES/.rbenv
-source $DOTFILES/.android
 source $DOTFILES/.shadowenv
-source $DOTFILES/.postgresql
 
 # User configuration
 
@@ -112,5 +111,5 @@ export PATH="/usr/local/opt/krb5/bin:$PATH"
 export PATH="/usr/local/opt/krb5/sbin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

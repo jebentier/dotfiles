@@ -1,2 +1,1 @@
-export GOROOT="/usr/local/Cellar/go/1.16.6/libexec"
 export GOPATH="$HOME/development/gopath"

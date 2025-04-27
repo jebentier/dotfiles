@@ -1,1 +1,4 @@
-eval "$(shadowenv init zsh)"
+which shadowenv > /dev/null
+if [ $? -eq 0 ]; then
+    eval "$(shadowenv init zsh)"
+fi
